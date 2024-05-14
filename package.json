@@ -1,0 +1,24 @@
+{
+  "name": "cypress-endtoend-testing-opencart",
+  "version": "1.0.0",
+  "description": "In this we will do Automation testing (end to end) using cypress ,  with CI/CD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namratamishra/Cypress-EndToEnd-Testing-Opencart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namratamishra/Cypress-EndToEnd-Testing-Opencart/issues"
+  },
+  "homepage": "https://github.com/namratamishra/Cypress-EndToEnd-Testing-Opencart#readme",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.9.0",
+    "esbuild": "^0.21.2"
+  }
+}
