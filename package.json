@@ -4,6 +4,7 @@
   "description": "In this we will do Automation testing (end to end) using cypress ,  with CI/CD.",
   "main": "index.js",
   "scripts": {
+    "test:addToCart": "npx cypress run --spec /Users/namratamishra/Desktop/Cypress-EndToEnd-Testing-Opencart/cypress/e2e/tests/addToCart.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^13.9.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "esbuild": "^0.21.2"
   }
 }

@@ -11,6 +11,6 @@ describe("Registration functionality", () => {
     registerObj.enterPassword(registerData.password);
     registerObj.selectCheckbox();
     registerObj.clickOnContinue();
-    //registerObj.verifyAccountCreationMessage();
+    registerObj.verifyAccountCreationMessage();
   });
 });

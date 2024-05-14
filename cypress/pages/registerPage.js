@@ -37,6 +37,6 @@ export class registerPage {
     cy.get(this.weblocators.continue).click();
   }
   verifyAccountCreationMessage(){
-cy.get(this.weblocators.successMessage).contains('have.text','Your Account Has Been Created!')
+   cy.get(this.weblocators.successMessage).should('contain','Your Account Has Been Created!')
   }
 }
