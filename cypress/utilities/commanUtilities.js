@@ -1,4 +1,4 @@
-const successFullMessage = 'Your Account Has Been Created!';
+const successFullMessage = 'Congratulations! Your new account has been successfully created!';
 const mandatoryFieldMessageFName = "First Name must be between 1 and 32 characters!"
 const mandatoryFieldMessageLName = "First Name must be between 1 and 32 characters!"
 const mandatoryFieldMessageEmail = "E-Mail Address does not appear to be valid!";

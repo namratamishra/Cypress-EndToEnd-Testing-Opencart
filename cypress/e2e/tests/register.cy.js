@@ -2,7 +2,6 @@ import { registerPage } from "../../pages/registerPage";
 const registerObj = new registerPage();
 import registerData from "../../fixtures/registerData.json";
 
-
 describe("Registration functionality", () => {
   it("Validate Registering an Account by providing all the fields", () => {
     registerObj.openUrl();
@@ -22,8 +21,7 @@ describe("Registration functionality", () => {
     registerObj.verifyMandatoryFieldMessage();
   })
 
-  it.only("Validate Registering an Account when 'No' option is selected for Newsletter field",()=>{
-    registerObj.openUrl();
+  it("Validate Registering an Account when 'No' option is selected for Newsletter field",()=>{
     registerObj.openUrl();
     registerObj.enterFirstname(registerData.firstName);
     registerObj.enterlastName(registerData.lastName);

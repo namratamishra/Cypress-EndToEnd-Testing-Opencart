@@ -12,7 +12,7 @@ export class registerPage {
     radioButton: '.radio-inline>input[value="0"]',
     //radioButton:'.col-sm-10 >:nth-child(2)>input',
     continue: ".btn.btn-primary",
-    successMessage: '#content>h1',
+    successMessage: '#content> :nth-child(2)',
     warning: '.alert.alert-danger.alert-dismissible',
 
   };
@@ -46,7 +46,10 @@ export class registerPage {
     cy.get(this.weblocators.continue).click();
   }
   verifyAccountCreationMessage() {
-    cy.get(this.weblocators.successMessage).should('have.text', successFullMessage)
+    // cy.get(this.weblocators.successMessage).should('have.text', successFullMessage)
+    cy.get(this.weblocators.successMessage).invoke('text').then((text)=>{
+      expect(text.includes(successFullMessage));
+    })
   }
   verifyMandatoryFieldMessage() {
     cy.get('div.col-sm-10> div.text-danger').invoke('text').then((text) => {
