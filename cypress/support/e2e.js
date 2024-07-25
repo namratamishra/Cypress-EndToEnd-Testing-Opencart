@@ -16,6 +16,14 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import 'cypress-mochawesome-reporter/register';
+// cypress/plugins/index.js
+
+module.exports = (on, config) => {
+    // Example of accessing Node.js-specific environment variables
+    console.log('Node.js Environment Variable:', process.env.NODE_ENV);
+    return config;
+  };
+  
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
